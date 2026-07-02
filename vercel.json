@@ -1,7 +1,7 @@
 {
-  "root": "_legacy",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/$1" }
+    { "source": "/", "destination": "/_legacy/index.html" },
+    { "source": "/(.*)", "destination": "/_legacy/$1" }
   ],
   "headers": [
     {
