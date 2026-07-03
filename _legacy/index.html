@@ -605,6 +605,36 @@
             display: block;
         }
 
+        .education-card.has-header {
+            padding: 0;
+        }
+
+        .education-card-header {
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            border-bottom: 1px solid var(--card-border);
+            position: relative;
+        }
+
+        .education-card-header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .education-card:hover .education-card-header img {
+            transform: scale(1.05);
+        }
+
+        .education-card-body {
+            padding: 24px 30px 30px 30px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
         .education-card h3 {
             margin-bottom: 8px;
             font-size: 1.25rem;
@@ -1552,45 +1582,53 @@
         <div class="container">
             <h2 class="section-title fade-in">Education</h2>
             <div class="education-container">
-                <div class="education-card fade-in">
-                    <div class="education-icon">
-                        <i class="fas fa-graduation-cap"></i>
+                <div class="education-card fade-in has-header">
+                    <div class="education-card-header">
+                        <img src="Assests/images/sece.png" alt="Sri Eshwar College of Engineering (SECE)">
                     </div>
-                    <h3>Undergraduate</h3>
-                    <p class="institution">Sri Eshwar College of Engineering (SECE)</p>
-                    <p class="year">2023 - 2027</p>
-                    <p>B.Tech in Artificial Intelligence and Data Science</p>
-                    <p class="percentage">CGPA: 7.90/10</p>
+                    <div class="education-card-body">
+                        <h3>Undergraduate</h3>
+                        <p class="institution">Sri Eshwar College of Engineering (SECE)</p>
+                        <p class="year">2023 - 2027</p>
+                        <p>B.Tech in Artificial Intelligence and Data Science</p>
+                        <p class="percentage">CGPA: 7.90/10</p>
+                    </div>
                 </div>
-                <div class="education-card fade-in">
-                    <div class="education-icon">
-                        <i class="fas fa-school"></i>
+                <div class="education-card fade-in has-header">
+                    <div class="education-card-header">
+                        <img src="Assests/images/school.jpg" alt="St. Antony's Matric Hr Sec School">
                     </div>
-                    <h3>HSC (12th Grade)</h3>
-                    <p class="institution">St.Antonys Matric Hr Sec School</p>
-                    <p class="year">2022 - 2023</p>
-                    <p>Bio-Mathematics</p>
-                    <p class="percentage">Percentage: 88%</p>
+                    <div class="education-card-body">
+                        <h3>HSC (12th Grade)</h3>
+                        <p class="institution">St.Antonys Matric Hr Sec School</p>
+                        <p class="year">2022 - 2023</p>
+                        <p>Bio-Mathematics</p>
+                        <p class="percentage">Percentage: 88%</p>
+                    </div>
                 </div>
-                <div class="education-card fade-in">
-                    <div class="education-icon">
-                        <i class="fas fa-school"></i>
+                <div class="education-card fade-in has-header">
+                    <div class="education-card-header">
+                        <img src="Assests/images/school.jpg" alt="St. Antony's Matric Hr Sec School">
                     </div>
-                    <h3>HSC (11th Grade)</h3>
-                    <p class="institution">St.Antonys Matric Hr Sec School</p>
-                    <p class="year">2021 - 2022</p>
-                    <p>Bio-Mathematics</p>
-                    <p class="percentage">Percentage: 70%</p>
+                    <div class="education-card-body">
+                        <h3>HSC (11th Grade)</h3>
+                        <p class="institution">St.Antonys Matric Hr Sec School</p>
+                        <p class="year">2021 - 2022</p>
+                        <p>Bio-Mathematics</p>
+                        <p class="percentage">Percentage: 70%</p>
+                    </div>
                 </div>
-                <div class="education-card fade-in">
-                    <div class="education-icon">
-                        <i class="fas fa-book"></i>
+                <div class="education-card fade-in has-header">
+                    <div class="education-card-header">
+                        <img src="Assests/images/school.jpg" alt="St. Antony's Matric Hr Sec School">
                     </div>
-                    <h3>SSLC (10th Grade)</h3>
-                    <p class="institution">St.Antonys Matric Hr Sec School</p>
-                    <p class="year">2020 - 2021</p>
-                    <p>General Education</p>
-                    <p class="percentage">Promoted (Pandemic Batch)</p>
+                    <div class="education-card-body">
+                        <h3>SSLC (10th Grade)</h3>
+                        <p class="institution">St.Antonys Matric Hr Sec School</p>
+                        <p class="year">2020 - 2021</p>
+                        <p>General Education</p>
+                        <p class="percentage">Promoted (Pandemic Batch)</p>
+                    </div>
                 </div>
             </div>
         </div>
