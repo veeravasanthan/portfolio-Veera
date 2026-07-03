@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -2309,13 +2309,16 @@
         // Light/Dark Mode Toggle
         const toggle = document.getElementById('theme-toggle');
 
-        // Check for saved theme preference or default to dark
-        const currentTheme = localStorage.getItem('theme') || 'dark';
+        // Check for saved theme preference or default to light
+        const currentTheme = localStorage.getItem('theme') || 'light';
 
         // Set the initial theme
         if (currentTheme === 'light') {
             document.documentElement.setAttribute('data-theme', 'light');
             toggle.checked = true;
+        } else {
+            document.documentElement.removeAttribute('data-theme');
+            toggle.checked = false;
         }
 
         // Toggle theme when switch is clicked
